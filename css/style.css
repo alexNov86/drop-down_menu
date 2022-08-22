@@ -52,13 +52,33 @@ body {
   top: 20px;
   left: 0;
   padding: 20px 0px 0px 0px;
-  /* display: none; */
+  min-width: 300px;
+  display: none;
 }
 .sub-menu__list > li {
   background-color: #fff;
 }
+.sub-menu__list > li:hover .sub-sub-menu__list {
+  display: block;
+}
 .sub-menu__link {
   color: #000;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.sub-sub-menu__list {
+  display: none;
+  min-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0px 0px 0px 5px;
+}
+.sub-sub-menu__list li {
+  background-color: #000;
 }
 .sub-sub-menu__link {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
 }
