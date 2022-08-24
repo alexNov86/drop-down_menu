@@ -37,6 +37,7 @@ if (isMobile.any()) {
     thisLink.classList.add("parent");
     arrows[i].addEventListener("click", function () {
       subMenu.classList.toggle("open");
+      thisArrow.classList.toggle("active");
     });
   }
 } else {
